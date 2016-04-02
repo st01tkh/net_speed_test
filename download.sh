@@ -20,8 +20,8 @@ case "$1" in
   clear) find "$thisDir" -mindepth 1 -maxdepth 1 -type f -name 'wget-download-*-*.log' -delete ;;
   *)
     echo "Usage: $(basename "$0") <581|180|7|clear> [<yandex>]"
-    echo "       Download 581, 180 or 7 Mib"
-    echo "       from yandex or another mirror"
+    echo "       <581|180|7|clear> - Download 581, 180, 7 Mib or clear logs"
+    echo "       [<yandex>] - optional - Set mirror"
     exit 0
     ;;
 esac
